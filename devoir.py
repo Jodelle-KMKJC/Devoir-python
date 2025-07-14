@@ -8,13 +8,13 @@ class couleur;
     def afficher_info(self);
         return *couleur : {} (code : {})*.format(self.nom, self.code_hex):
 
-if __name__ == "__main__":
-        rouge = _("rouge" , "red")
-        bleu = _("bleu" , "#0000FF")
-        vert= _("vert" , "#00FF00")
-        jaune= _("jaune" , "#FFFF00")
+            if __name__ == "__main__":
+                    rouge = _("rouge" , "red")
+                    bleu = _("bleu" , "#0000FF")
+                    vert= _("vert" , "#00FF00")
+                    jaune= _("jaune" , "#FFFF00")
 
-    class figure;
+class figure;
         def __init__(self, nom, couleur):
             self.couleur = couleur
             self.nom = nom
@@ -28,6 +28,8 @@ if __name__ == "__main__":
         def perimetre(self):
             return 0
 
-        def afficher_resultats(self)
-            print("+_)(*&&&7&!2>>ZX)")
+        def afficher_resultats(self):
+            print("/n{}".format(self.afficher_info()))
+            print("/aire : {}".format:(self.aire()))
+            print("/perimetre : {}".format:(self.perimetre()))
 
