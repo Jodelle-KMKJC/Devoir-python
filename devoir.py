@@ -5,13 +5,13 @@ class Couleur:
         self.nom = nom
         self.code_hex = code_hex
 
-    def afficher_info(self);
-        return *couleur : {} (code : {})*.format(self.nom, self.code_hex):
+    def afficher_info(self):
+        return "Couleur : {} (code : {})".format(self.nom, self.code_hex)
 
-            if __name__ == "__main__":
-                    jaune = ("jaune" , "#FFFF00")
-                    bleu = _("bleu" , "#0000FF")
-                    vert= _("vert" , "#00FF00")
+if __name__ == "__main__":
+    jaune = ("jaune" , "#FFFF00")
+    bleu = ("bleu" , "#0000FF")
+    vert= ("vert" , "#00FF00")
 
 class Figure:
     def __init__(self, nom, couleur):
@@ -19,7 +19,7 @@ class Figure:
         self.nom = nom
 
     def afficher_info(self):
-        return "figure : {} -{}".format(self.nom, self.couleur.afficher_info())
+        return "figure : {} -{}".format(self.nom, self.Couleur)
 
     def aire(self):
         return 0
@@ -28,9 +28,9 @@ class Figure:
         return 0
 
     def afficher_resultats(self):
-            print("/n{}".format(self.afficher_info()))
-            print("/aire : {}".format:(self.aire()))
-            print("/perimetre : {}".format:(self.perimetre()))
+            print("\n{}".format(self))
+            print("\naire : {}".format(self.aire()))
+            print("\nperimetre : {}".format(self.perimetre()))
 
 class Cercle(Figure):
     def __init__(self, rayon, couleur):
@@ -54,22 +54,21 @@ class Rectancle(Figure):
         return 2* (self.longueur + self.largeur)
 
 class Triangle(Figure):
-    def __init__(self, hauteur, base, couleur)
+    def __init__(self, hauteur, base, couleur):
         self.hauteur = hauteur
         self.base = base
         super().__init__("triangle", couleur)
 
     def aire(self):
         return (self.base * self.hauteur) / 2
-        def perimetre(self):
-            return self.base + self.hauteur + hypotenuse
+    def perimetre(self):
+            return self.base + self.hauteur 
 
              
-                 cercle = Cercle(5, "#FFFF00")
-                 rectancle = Rectancle(4, 6, "#00FF00")
-                 triangle = Triangle(3, 4, "#00FF00")
+cercle = Cercle(5, "#FFFF00")
+rectancle = Rectancle(4, 6, "#00FF00")
+triangle = Triangle(3, 4, "#00FF00")
 
-                 print(cercle.afficher_resultats())
-                 print(rectancle.afficher_resultats())
-                 print(rectancle.afficher_resultats())
-                 
+cercle.afficher_resultats()
+rectancle.afficher_resultats()
+triangle.afficher_resultats()
