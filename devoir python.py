@@ -9,10 +9,9 @@ class Couleur:
         return *couleur : {} (code : {})*.format(self.nom, self.code_hex):
 
             if __name__ == "__main__":
-                    rouge = _("rouge" , "red")
+                    jaune = ("jaune" , "#FFFF00")
                     bleu = _("bleu" , "#0000FF")
                     vert= _("vert" , "#00FF00")
-                    jaune= _("jaune" , "#FFFF00")
 
 class Figure:
     def __init__(self, nom, couleur):
@@ -64,3 +63,13 @@ class Triangle(Figure):
         return (self.base * self.hauteur) / 2
         def perimetre(self):
             return self.base + self.hauteur + hypotenuse
+
+             
+                 cercle = Cercle(5, "#FFFF00")
+                 rectancle = Rectancle(4, 6, "#00FF00")
+                 triangle = Triangle(3, 4, "#00FF00")
+
+                 print(cercle.afficher_resultats())
+                 print(rectancle.afficher_resultats())
+                 print(rectancle.afficher_resultats())
+                 
