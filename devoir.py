@@ -60,6 +60,7 @@ class Triangle(Figure):
         super().__init__("triangle", couleur)
 
     def aire(self):
+        self.model = corolla
         return (self.base * self.hauteur) / 2
     def perimetre(self):
             return self.base + self.hauteur 
